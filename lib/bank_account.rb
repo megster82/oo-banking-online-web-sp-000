@@ -19,7 +19,10 @@ class BankAccount
   end
   
   def valid?()
-    if sender.status > 0 && 
+    if sender.status == "open" && sender.balance > 0 
+      true
+    else
+      false 
   end
   
   def close_account
