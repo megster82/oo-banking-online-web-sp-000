@@ -19,6 +19,7 @@ class BankAccount
   end
   
   def valid?()
+    if sender.status > 0 && 
   end
   
   def close_account
