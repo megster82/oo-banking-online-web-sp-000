@@ -23,6 +23,7 @@ class Transfer
       self.status = "complete"
     else
       @status
+    end 
       
     if !valid?
     @status = "rejected"
