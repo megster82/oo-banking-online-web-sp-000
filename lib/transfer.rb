@@ -8,12 +8,12 @@ class Transfer
     @status = "pending"
   end
   
-  def valid?()
-    if @status == "open" && @balance > 0 
+  def valid?
+    if @sender.valid? && @receiver.valid?
       true
     else
-      false 
-    end     
+      false
+    end
   end
   
   def execute_transaction
